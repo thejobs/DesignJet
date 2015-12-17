@@ -28,7 +28,7 @@ class BancoDeDados {
 	 */
 	private function conectarNoBancoDeDados() {
 		try {
-			$dadosDeConexao = "mysql:host=localhost;dbname=MYANIMESLISTA;";
+			$dadosDeConexao = "mysql:host=localhost;dbname=DESIGNJET;";
 			$this->conexao = new PDO ( $dadosDeConexao, "root", "" );
 			$this->conexao->setAttribute ( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 		} catch ( Exception $erro ) {
